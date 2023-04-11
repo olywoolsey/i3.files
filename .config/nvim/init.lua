@@ -1,5 +1,6 @@
-vim.cmd('colorscheme default')
-
-require('vars') -- variables
-require('maps') -- keymaps
-require('opts') -- options
+require('oly.colorscheme')
+require('oly.vars')
+require('oly.maps')
+require('oly.options')
+require('oly.plugins')
+require('oly.cmp')
