@@ -13,6 +13,7 @@ vim.g.maplocalleader = " "
 -- LEADER --
 keymap("n", "<Leader>h", ":noh<CR>", opts)
 keymap("n", "<Leader>e", ":Lex 20<CR>", opts)
+keyamp("n", "<Leader>t", "<C-w>v :terminal<CR> <S-a>", term_opts)
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
