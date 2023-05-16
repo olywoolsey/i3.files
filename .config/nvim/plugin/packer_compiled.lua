@@ -104,30 +104,66 @@ _G.packer_plugins = {
     path = "/home/oly/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
+  edge = {
+    loaded = true,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/edge",
+    url = "https://github.com/sainnhe/edge"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/oly/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["kanagawa.nvim"] = {
     loaded = true,
     path = "/home/oly/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
     url = "https://github.com/rebelot/kanagawa.nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/oly/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nvim-enfocado"] = {
+  ["nvim-ghost.nvim"] = {
     loaded = true,
-    path = "/home/oly/.local/share/nvim/site/pack/packer/start/nvim-enfocado",
-    url = "https://github.com/artart222/nvim-enfocado"
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/nvim-ghost.nvim",
+    url = "https://github.com/subnut/nvim-ghost.nvim"
+  },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
+    url = "https://github.com/williamboman/nvim-lsp-installer"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/oly/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -139,10 +175,40 @@ _G.packer_plugins = {
     path = "/home/oly/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["tabby.nvim"] = {
+    loaded = true,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/tabby.nvim",
+    url = "https://github.com/nanozuki/tabby.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/home/oly/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-css-color"] = {
+    loaded = true,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/vim-css-color",
+    url = "https://github.com/ap/vim-css-color"
+  },
+  ["vim-enfocado"] = {
+    loaded = true,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/vim-enfocado",
+    url = "https://github.com/wuelnerdotexe/vim-enfocado"
+  },
+  ["vim-gas"] = {
+    loaded = true,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/vim-gas",
+    url = "https://github.com/Shirk/vim-gas"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/oly/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 

@@ -37,7 +37,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 # launch rofi to search for files 
-bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+space exec --no-startup-id rofi -show drun
 
 # change focus
 bindsym $mod+h focus left
@@ -221,5 +221,5 @@ bar {
 
 # Startup Programs
 exec_always feh --bg-fill $HOME/.config/i3/owl.jpg
-exec pulseaudio --start
+exec pipwire --start
 exec --no-startup-id picom --config ~/.config/picom/picom.conf

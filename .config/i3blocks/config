@@ -118,7 +118,7 @@ border_left=0
 [time]
 command=date +%T
 interval=1
-label=<span color="#0992d0"><b>⏲︎ </b></span>
+label=<span color="#0992d0"><b> </b></span>
 border=#0992d0
 border_top=1
 border_right=0
@@ -128,7 +128,7 @@ border_left=0
 [date]
 command=date "+%d - %m - %Y"
 interval=1
-label=<span color="#ffdd42">📅︎ </span>
+label=<span color="#ffdd42"> </span>
 border=#ffdd42
 border_top=1
 border_right=0
