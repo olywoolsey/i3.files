@@ -158,68 +158,69 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Inner gaps for all windows: space between two adjacent windows
-gaps inner 14
+gaps inner 5
 # smart_gaps on
 
-default_border pixel 2
-smart_borders on
+default_border pixel 0
+# smart_borders on
 
 # Window borders
 # class                 border  backgr. text    indicator child_border
-client.focused          #ff79c6 #ff79c6 #ff79c6 #ff79c6   #ff79c6
-client.focused_inactive #000000 #5f676a #ffffff #484e50   #000000
-client.unfocused        #000000 #222222 #888888 #292d2e   #000000
-client.urgent           #000000 #900000 #ffffff #900000   #000000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #000000
+client.focused          #FCA311 #FCA311 #FCA311 #FCA311   #FCA311
+#client.focused_inactive #000000 #5f676a #ffffff #484e50   #000000
+#client.unfocused        #000000 #222222 #888888 #292d2e   #000000
+#client.urgent           #000000 #900000 #ffffff #900000   #000000
+#client.placeholder      #000000 #0c0c0c #ffffff #000000   #000000
 
 client.background       #020d22
 
 # Start i3blocks to display a workspace bar
-bar {
-    font pango: SauceCodePro Nerd Font 10
-    i3bar_command i3bar --transparency
-    output primary
-    position top
-    status_command i3blocks
-    strip_workspace_numbers yes
-    tray_output nonprimary
-
-    colors {
-        background #00000000
-        statusline #F8F8F200
-        separator  #44475A00
-
-        focused_workspace  #00000000 #00000000 #ff79c6
-        active_workspace   #00000000 #00000000 #0992d0
-        inactive_workspace #00000000 #00000000 #0992d0
-        urgent_workspace   #00000000 #00000000 #0992d0
-        binding_mode       #00000000 #00000000 #0992d0
-    }
-}
-
-bar {
-    font pango: SauceCodePro Nerd Font 10
-    i3bar_command i3bar
-    output nonprimary
-    strip_workspace_numbers yes
-    tray_output DP-4
-
-    colors {
-        background #282A3600
-        statusline #F8F8F200
-        separator  #44475A00
-
-        focused_workspace  #44475A00 #44475A00 #ff79c6
-        active_workspace   #282A3600 #44475A00 #F8F8F2
-        inactive_workspace #282A3600 #282A3600 #BFBFBF
-        urgent_workspace   #FF555500 #FF555500 #F8F8F2
-        binding_mode       #FF555500 #FF555500 #F8F8F2
-    }
-}
+# bar {
+#     font pango: SauceCodePro Nerd Font 10
+#     i3bar_command i3bar --transparency
+#     output primary
+#     position top
+#     status_command i3blocks
+#     strip_workspace_numbers yes
+#     tray_output nonprimary
+# 
+#     colors {
+#         background #00000000
+#         statusline #F8F8F200
+#         separator  #44475A00
+# 
+#         focused_workspace  #00000000 #00000000 #ff79c6
+#         active_workspace   #00000000 #00000000 #0992d0
+#         inactive_workspace #00000000 #00000000 #0992d0
+#         urgent_workspace   #00000000 #00000000 #0992d0
+#         binding_mode       #00000000 #00000000 #0992d0
+#     }
+# }
+# 
+# bar {
+#     font pango: SauceCodePro Nerd Font 10
+#     i3bar_command i3bar
+#     output nonprimary
+#     strip_workspace_numbers yes
+#     tray_output DP-4
+# 
+#     colors {
+#         background #282A3600
+#         statusline #F8F8F200
+#         separator  #44475A00
+# 
+#         focused_workspace  #44475A00 #44475A00 #ff79c6
+#         active_workspace   #282A3600 #44475A00 #F8F8F2
+#         inactive_workspace #282A3600 #282A3600 #BFBFBF
+#         urgent_workspace   #FF555500 #FF555500 #F8F8F2
+#         binding_mode       #FF555500 #FF555500 #F8F8F2
+#     }
+# }
 
 
 
 # Startup Programs
-exec_always feh --bg-fill $HOME/.config/i3/owl.jpg
+exec_always feh --bg-fill $HOME/.config/i3/autummleaves.jpg
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec pipwire --start
 exec --no-startup-id picom --config ~/.config/picom/picom.conf

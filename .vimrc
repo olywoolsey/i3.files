@@ -9,7 +9,7 @@ set ruler
 
 " remaps
 let mapleader = " "
-nnoremap <leader>e :NERDTreeToggle<CR>
+" nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <C-i> i_<Esc>r
 nnoremap <C-a> a_<Esc>r
 inoremap  jk <Esc>
@@ -30,14 +30,5 @@ set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             "Rownumber/total (%)
 set statusline+=%9*\ col:%03c\                            "Colnr
 set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? Top/bot.
 
-" Plugins
-call plug#begin()
-
-Plug 'preservim/nerdtree'
-"Plug 'github/copilot.vim'
-
-call plug#end()
-
 " Colours
-let g:molokai_original = 1
-colorscheme molokai
+colorscheme default
