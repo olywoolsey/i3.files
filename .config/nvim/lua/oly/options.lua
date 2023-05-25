@@ -1,4 +1,3 @@
--- [[  options.lua ]] 
 local options =
 {
     -- [[ line numbers ]]
@@ -7,12 +6,12 @@ local options =
     cursorline = true,                  -- Highlight current line
     scrolloff = 4,                      -- Lines of context
     
-    -- [[ indents ]__]
+    -- [[ indents ]]
     expandtab = true,                   -- Expand tab
     autoindent = true,                  -- Indent lines
-    tabstop = 4,                    -- Number of columns occupied by a tabstop
-    softtabstop = 4,                -- Number of columns occupied by a tabstop
-    shiftwidth = 4,                 -- Works with tabstop and softtabstop
+    tabstop = 4,                        -- Number of columns occupied by a tabstop
+    softtabstop = 4,                    -- Number of columns occupied by a tabstop
+    shiftwidth = 4,                     -- Works with tabstop and softtabstop
     
     -- [[ search ]]
     ignorecase = true,                  -- Ignore case in search patterns

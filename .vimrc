@@ -6,10 +6,7 @@ set mouse=a
 set noswapfile
 set ruler
 
-
-" remaps
 let mapleader = " "
-" nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <C-i> i_<Esc>r
 nnoremap <C-a> a_<Esc>r
 inoremap  jk <Esc>
@@ -17,7 +14,6 @@ inoremap  kj <Esc>
 
 syntax enable
 
-" status line
 set statusline=
 set statusline+=%7*\[%n]                                  "buffernr
 set statusline+=%1*\ %<%F\                                "File+path
@@ -30,5 +26,4 @@ set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             "Rownumber/total (%)
 set statusline+=%9*\ col:%03c\                            "Colnr
 set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? Top/bot.
 
-" Colours
 colorscheme default

@@ -1,6 +1,5 @@
 local theme = {
   fill = 'TabLineFill',
-  -- Also you can do: fill = { fg='#f2e9de', bg='#907aa9', style='italic' }
   head = 'TabLine',
   current_tab = 'TabLineSel',
   tab = 'TabLine',

@@ -45,16 +45,19 @@ local branch = {
 
 local location = {
     "location",
-    padding = 0,
+    padding = 1,
 }
 
--- cool function for progress
 local progress = function()
     local current_line = vim.fn.line(".")
     local total_lines = vim.fn.line("$")
     local line_ratio = current_line / total_lines
     line_ratio = math.floor(line_ratio * 100)
-    return line_ratio .."%%"
+    if line_ratio<10 then
+        return " ".. line_ratio .."%%"
+    else
+        return line_ratio .."%%"
+    end
 end
 
 local spaces = function()
@@ -74,7 +77,6 @@ lualine.setup({
         lualine_a = { branch, diagnostics },
         lualine_b = { mode },
         lualine_c = {},
-        -- lualine_x = { "encoding", "fileformat", "filetype" },
         lualine_x = { diff, spaces, "encoding", filetype },
         lualine_y = { location },
         lualine_z = { progress },
@@ -84,7 +86,7 @@ lualine.setup({
         lualine_b = {},
         lualine_c = { "filename" },
         lualine_x = { "location" },
-        lualine_y = {},
+        lualine_y = { filetype },
         lualine_z = {},
     },
     tabline = {},
