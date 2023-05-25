@@ -40,10 +40,9 @@ packer.init({
 
 
 
--- Install your plugins here
 return packer.startup(function(use)
-    use "wbthomason/packer.nvim" -- Have packer manage itself
-    use "nvim-lua/plenary.nvim"  -- Useful lua functions used by many plugins
+    use "wbthomason/packer.nvim"
+    use "nvim-lua/plenary.nvim"
 
     -- Colorschemes
     use "folke/tokyonight.nvim" 
