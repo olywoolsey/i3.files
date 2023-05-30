@@ -32,6 +32,7 @@ bindsym Print exec gnome-screenshot -i
 
 # start a terminal
 bindsym $mod+Return exec alacritty
+bindsym $mod+s exec vivaldi-stable
 
 # kill focused window
 bindsym $mod+q kill
@@ -73,8 +74,6 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # Name the workspace
@@ -114,7 +113,6 @@ bindsym $mod+Shift+9 move container to workspace number $workspace9
 bindsym $mod+Shift+0 move container to workspace number $workspace0
 
 # assign apps to workspaces
-assign [class="Emacs"]   $workspace2
 assign [class="Spotify"] $workspace0
 
 # reload the configuration file
@@ -220,7 +218,7 @@ client.background       #020d22
 
 
 # Startup Programs
-exec_always feh --bg-fill $HOME/.config/i3/autummleaves.jpg
+exec_always feh --bg-fill $HOME/.config/i3/sunset.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec pipwire --start
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
