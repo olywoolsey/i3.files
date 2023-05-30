@@ -1,6 +1,6 @@
 colors:
   primary:
-    background: '0x000000'
+    background: '0x002b36'
     foreground: '0xd6d6d6'
  
     dim_foreground:    '0xdbdbdb'
@@ -33,7 +33,7 @@ colors:
     white:   '0xcacaca'
 
 window:
-  opacity: 0.82
+  opacity: 0.84
   padding:
     x: 0
     y: 0
